@@ -11,7 +11,7 @@
 
     <title>
         
-        
+        tags - undefined
         
     </title>
 
@@ -53,13 +53,13 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
                 </a>
             </li>
-            <li >
+            <li  class=active >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
@@ -104,34 +104,36 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        
-<div class="post-preview-container" style="min-height: 720px">
+        <div id='tag_cloud' class="tags">
     
+    <a href="#博客" title="博客" rel="1">博客</a>
+    
+</div>
+
+<!-- 标签列表 -->
+
+
+<div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="博客">
+                    <span class="tag-text">博客</span>
+                </span>
+    
+    <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
     <div class="post-preview">
-        <div class="post-time">2019-07-17</div>
-        <div class="post-info">
-            <a href="/2019/07/17/MacOS搭建hexo博客系统/">
-                <h3>
-                    MacOS搭建hexo博客系统
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#博客" title="博客">博客</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+        <a href="/2019/07/17/MacOS搭建hexo博客系统/">
+            <h2 class="post-title">
+                MacOS搭建hexo博客系统
+            </h2>
+            
+        </a>
+        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
 </div>
-<ul class="pager">
-    
-    
-</ul>
+
 
     </div>
 </div>
